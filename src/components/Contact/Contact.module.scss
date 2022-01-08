@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: #212121;
+    color: #ffffff;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background-color: #484848;
+    }
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    & svg {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
+
+.text {
+    font-size: 20px;
+}

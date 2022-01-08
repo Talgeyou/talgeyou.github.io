@@ -1,0 +1,31 @@
+.wrapper {
+    background-color: #fafafa;
+    color: #000000;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: calc(300px + 2rem);
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    background: #fafafa;
+    color: #000000;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #1976d2;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    &:hover {
+        background-color: #63a4ff;
+        color: #000000;
+    }
+}
