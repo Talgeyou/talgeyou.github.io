@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { ProjectImageType } from "../../types/Project.type";
 import styles from "./Project.module.scss";
 
@@ -27,6 +28,8 @@ export const Project = (props: Props) => {
               />
             ))}
             <img
+              width={300}
+              height={200}
               src={imageLinks[0].picture}
               alt={`${name} pucture`}
               className={styles.image__picture}
@@ -35,9 +38,20 @@ export const Project = (props: Props) => {
         ) : null}
       </div>
       <div className={styles.description}>{description}</div>
-      <a href={link} className={styles.button}>
-        Visit Website
-      </a>
+      <div className={styles.actions}>
+        <NavLink
+          to={`/project/${id}`}
+          className={`${styles["actions__button"]} styles['actions__button--details']`}
+        >
+          Details
+        </NavLink>
+        <a
+          href={link}
+          className={`${styles["actions__button"]} styles['actions__button--visit']`}
+        >
+          Visit Website
+        </a>
+      </div>
     </article>
   );
 };

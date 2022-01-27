@@ -28,26 +28,6 @@ export const Projects = (props: Props) => {
       description: "It's a web app that can help you to find an anime",
       link: "https://anime-project-gules.vercel.app/",
     },
-    {
-      id: 1,
-      name: "Budget Planner",
-      imageLinks: [
-        { id: 0, type: "image/webp", picture: budgetPlannerPictureWEBP },
-        { id: 1, type: "image/jpeg", picture: budgetPlannerPictureJPG },
-      ],
-      description: "It's a web app that can help you to manage your budget",
-      link: "https://budget-planner-six.vercel.app/",
-    },
-    {
-      id: 2,
-      name: "Minna Genshin",
-      imageLinks: [
-        { id: 0, type: "image/webp", picture: minnaGenshinPictureWEBP },
-        { id: 1, type: "image/jpeg", picture: minnaGenshinPictureJPG },
-      ],
-      description: "It's a web app with useful genshin impact tools",
-      link: "https://talgeyou.github.io/minna-genshin",
-    },
   ];
 
   const handleButtonClick = useCallback(() => {
